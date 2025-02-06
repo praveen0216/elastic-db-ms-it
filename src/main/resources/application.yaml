@@ -1,0 +1,11 @@
+spring :
+  data:
+    elasticsearch:
+      cluster-name: my-elasticsearch-cluster
+      cluster-nodes: localhost:9200
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+  application :
+    name: elastic-db-ms-it
+
+

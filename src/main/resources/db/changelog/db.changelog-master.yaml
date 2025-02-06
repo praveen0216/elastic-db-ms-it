@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: admin
+      changes:
+        - createTable:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  type: varchar(255)
+
+              - column:
+                  name: name
+                  type: varchar(255)
+
+              - column:
+                  name: price
+                  type: double
